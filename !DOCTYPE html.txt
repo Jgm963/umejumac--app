@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UMEJUMAC</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+        .text-venezuelan {
+            color: #ffc107; /* Amarillo */
+        }
+        .bg-venezuelan-primary {
+            background-color: #003666; /* Azul */
+        }
+        .bg-venezuelan-secondary {
+            background-color: #ffc107; /* Amarillo */
+        }
+        .border-venezuelan-primary {
+            border-color: #003666; /* Azul */
+        }
+        .border-venezuelan-secondary {
+            border-color: #ffc107; /* Amarillo */
+        }
+    </style>
+</head>
+<body class="bg-gray-50 flex flex-col min-h-screen">
+
+    <!-- Header -->
+    <header class="bg-venezuelan-primary text-white p-4 shadow-md sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">UMEJUMAC</h1>
+            <nav class="hidden md:flex space-x-6 text-lg">
+                <a href="#productos" class="hover:text-venezuelan-secondary transition-colors duration-300">Servicios</a>
+                <a href="#contacto" class="hover:text-venezuelan-secondary transition-colors duration-300">Contacto</a>
+            </nav>
+            <div class="relative">
+                <button id="cart-button" class="bg-transparent text-white text-2xl relative p-2 rounded-full hover:bg-venezuelan-secondary hover:text-gray-800 transition-colors duration-300">
+                    <i class="fas fa-handshake"></i>
+                    <span id="cart-count" class="absolute top-0 right-0 inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-red-100 transform translate-x-1/2 -translate-y-1/2 bg-red-600 rounded-full">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8 flex-grow">
+
+        <!-- Hero Section -->
+        <section class="text-center mb-12">
+            <div class="bg-venezuelan-primary text-white p-8 rounded-xl shadow-lg">
+                <h2 class="text-4xl md:text-5xl font-extrabold mb-4">UMEJUMAC: Unidad Medico Juridica Morales AC</h2>
+                <p class="text-xl md:text-2xl mb-6">Asesoría integral en salud y derecho para tu bienestar.</p>
+                <a href="#productos" class="bg-venezuelan-secondary text-gray-800 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-white hover:text-venezuelan-primary transition-colors duration-300">Explorar Servicios</a>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section id="productos" class="mb-12">
+            <h2 class="text-3xl font-bold text-center mb-8 text-venezuelan-primary">Nuestros Servicios</h2>
+            <div id="product-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                <!-- Product cards will be injected here by JavaScript -->
+            </div>
+        </section>
+
+        <!-- Cart Modal -->
+        <div id="cart-modal" class="fixed inset-0 bg-gray-900 bg-opacity-75 z-50 flex justify-center items-center hidden">
+            <div class="bg-white rounded-xl shadow-2xl p-6 w-11/12 md:w-3/4 lg:w-1/2 max-h-[90vh] flex flex-col">
+                <div class="flex justify-between items-center pb-4 border-b border-gray-200">
+                    <h3 class="text-2xl font-bold">Tu Consulta</h3>
+                    <button id="close-cart" class="text-gray-500 hover:text-gray-800 transition-colors duration-300">&times;</button>
+                </div>
+                <div id="cart-items" class="flex-grow overflow-y-auto my-4 space-y-4">
+                    <!-- Cart items will be injected here -->
+                </div>
+                <div class="pt-4 border-t border-gray-200 flex justify-between items-center">
+                    <span class="text-xl font-bold">Costo estimado: <span id="cart-total">$0.00</span></span>
+                    <button id="checkout-button" class="bg-venezuelan-primary text-white font-bold py-2 px-6 rounded-full hover:bg-opacity-90 transition-opacity duration-300">Confirmar Consulta</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+        <section id="contacto" class="bg-white p-8 rounded-xl shadow-lg">
+            <h2 class="text-3xl font-bold text-center mb-8 text-venezuelan-primary">Contáctanos</h2>
+            <p class="text-center text-gray-600 mb-6">Envíanos un mensaje o síguenos en nuestras redes sociales.</p>
+            <form id="contact-form" class="max-w-xl mx-auto space-y-6">
+                <div>
+                    <label for="name" class="block text-gray-700 font-bold mb-2">Nombre</label>
+                    <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-venezuelan-primary" required>
+                </div>
+                <div>
+                    <label for="email" class="block text-gray-700 font-bold mb-2">Correo Electrónico</label>
+                    <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-venezuelan-primary" required>
+                </div>
+                <div>
+                    <label for="message" class="block text-gray-700 font-bold mb-2">Mensaje</label>
+                    <div class="relative">
+                        <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-venezuelan-primary" required></textarea>
+                        <button type="button" id="summarize-btn" class="absolute top-2 right-2 bg-blue-500 text-white text-xs font-semibold px-2 py-1 rounded-md shadow-md hover:bg-blue-600 transition-colors duration-300">✨Resumir✨</button>
+                    </div>
+                    <div id="summary-result" class="mt-2 text-sm text-gray-600 hidden">
+                        <p class="font-bold">Resumen rápido:</p>
+                        <p id="summary-text"></p>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="bg-venezuelan-primary text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-opacity-90 transition-opacity duration-300">Enviar Mensaje</button>
+                </div>
+            </form>
+            <div id="loading-spinner" class="mt-4 text-center hidden">
+                <i class="fas fa-spinner fa-spin text-venezuelan-primary text-2xl"></i>
+            </div>
+        </section>
+
+        <!-- Gemini Content Generator Section -->
+        <section id="ai-generator" class="bg-white p-8 rounded-xl shadow-lg mt-8">
+            <h2 class="text-3xl font-bold text-center mb-8 text-venezuelan-primary">✨Generador de Contenido✨</h2>
+            <div class="max-w-xl mx-auto space-y-6">
+                <div>
+                    <label for="topic-input" class="block text-gray-700 font-bold mb-2">Tema para un artículo o post de blog:</label>
+                    <input type="text" id="topic-input" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-venezuelan-primary" placeholder="Ej: Importancia de la ética médica en la práctica legal">
+                </div>
+                <div class="text-center">
+                    <button id="generate-content-btn" class="bg-venezuelan-primary text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-opacity-90 transition-opacity duration-300">Generar Contenido</button>
+                </div>
+                <div id="ai-loading-spinner" class="mt-4 text-center hidden">
+                    <i class="fas fa-spinner fa-spin text-venezuelan-primary text-2xl"></i>
+                </div>
+                <div id="content-result" class="mt-4 p-4 bg-gray-100 rounded-lg hidden">
+                    <h3 class="text-xl font-bold mb-2">Ideas Generadas:</h3>
+                    <p id="generated-text" class="whitespace-pre-line"></p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-venezuelan-primary text-white p-4 text-center mt-8">
+        <p>&copy; 2024 UMEJUMAC. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            const products = [
+                { id: 1, name: 'Asesorías en salud colectiva', price: 0.00, imageUrl: 'https://placehold.co/400x400/003666/FFFFFF?text=Salud+Colectiva', description: 'Orientación y acompañamiento legal para comunidades y grupos.' },
+                { id: 2, name: 'Transacciones de bienes y servicios', price: 0.00, imageUrl: 'https://placehold.co/400x400/ffc107/003666?text=Bienes+y+Servicios', description: 'Asesoría jurídica para la compra, venta y prestación de servicios.' },
+            ];
+
+            const productGrid = document.getElementById('product-grid');
+            const cartButton = document.getElementById('cart-button');
+            const cartModal = document.getElementById('cart-modal');
+            const closeCartButton = document.getElementById('close-cart');
+            const cartItemsContainer = document.getElementById('cart-items');
+            const cartTotalSpan = document.getElementById('cart-total');
+            const cartCountSpan = document.getElementById('cart-count');
+            const checkoutButton = document.getElementById('checkout-button');
+
+            const messageTextarea = document.getElementById('message');
+            const summarizeBtn = document.getElementById('summarize-btn');
+            const summaryResult = document.getElementById('summary-result');
+            const summaryText = document.getElementById('summary-text');
+
+            const topicInput = document.getElementById('topic-input');
+            const generateContentBtn = document.getElementById('generate-content-btn');
+            const contentResult = document.getElementById('content-result');
+            const generatedText = document.getElementById('generated-text');
+            const aiLoadingSpinner = document.getElementById('ai-loading-spinner');
+            const loadingSpinner = document.getElementById('loading-spinner');
+
+            let cart = [];
+
+            function renderProducts() {
+                productGrid.innerHTML = products.map(product => `
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden transform transition-transform duration-300 hover:scale-105">
+                        <img src="${product.imageUrl}" alt="${product.name}" class="w-full h-48 object-cover">
+                        <div class="p-5 text-center">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">${product.name}</h3>
+                            <p class="text-gray-600 text-sm mb-4">${product.description}</p>
+                            <span class="text-2xl font-bold text-venezuelan-primary mb-4"></span>
+                            <button data-id="${product.id}" class="add-to-cart-btn mt-4 bg-venezuelan-primary text-white font-bold py-2 px-6 rounded-full hover:bg-opacity-90 transition-opacity duration-300">
+                                Consultar Servicio
+                            </button>
+                        </div>
+                    </div>
+                `).join('');
+            }
+
+            function updateCart() {
+                cartItemsContainer.innerHTML = '';
+                let total = 0;
+                let itemCount = 0;
+
+                if (cart.length === 0) {
+                    cartItemsContainer.innerHTML = '<p class="text-center text-gray-500">Tu consulta está vacía. Selecciona un servicio.</p>';
+                } else {
+                    cart.forEach(item => {
+                        const product = products.find(p => p.id === item.id);
+                        if (product) {
+                            const cartItemElement = document.createElement('div');
+                            cartItemElement.className = 'flex items-center space-x-4 border-b border-gray-200 pb-4';
+                            cartItemElement.innerHTML = `
+                                <img src="${product.imageUrl}" alt="${product.name}" class="w-16 h-16 object-cover rounded-lg">
+                                <div class="flex-grow">
+                                    <h4 class="text-lg font-semibold">${product.name}</h4>
+                                    <p class="text-gray-600 text-sm">${product.description}</p>
+                                </div>
+                                <button data-id="${product.id}" class="remove-from-cart-btn text-red-500 hover:text-red-700 transition-colors duration-300">
+                                    <i class="fas fa-trash-alt"></i>
+                                </button>
+                            `;
+                            cartItemsContainer.appendChild(cartItemElement);
+                            total += product.price * item.quantity;
+                            itemCount += item.quantity;
+                        }
+                    });
+                }
+                cartTotalSpan.textContent = `$${total.toFixed(2)}`;
+                cartCountSpan.textContent = itemCount;
+            }
+
+            // Event Listeners
+            productGrid.addEventListener('click', (e) => {
+                if (e.target.classList.contains('add-to-cart-btn')) {
+                    const id = parseInt(e.target.dataset.id);
+                    const existingItem = cart.find(item => item.id === id);
+                    if (existingItem) {
+                        // Using a custom alert for better UI
+                        showMessageBox('Este servicio ya está en tu lista de consulta.');
+                    } else {
+                        cart.push({ id: id, quantity: 1 });
+                        updateCart();
+                        showMessageBox('Servicio añadido a tu consulta.');
+                    }
+                }
+            });
+
+            cartItemsContainer.addEventListener('click', (e) => {
+                if (e.target.closest('.remove-from-cart-btn')) {
+                    const id = parseInt(e.target.closest('.remove-from-cart-btn').dataset.id);
+                    const itemIndex = cart.findIndex(item => item.id === id);
+                    if (itemIndex > -1) {
+                        cart.splice(itemIndex, 1);
+                        updateCart();
+                    }
+                }
+            });
+
+            cartButton.addEventListener('click', () => {
+                cartModal.classList.remove('hidden');
+            });
+
+            closeCartButton.addEventListener('click', () => {
+                cartModal.classList.add('hidden');
+            });
+
+            checkoutButton.addEventListener('click', () => {
+                if (cart.length > 0) {
+                    showMessageBox('¡Consulta confirmada con éxito! Nos pondremos en contacto contigo.');
+                    cart = [];
+                    updateCart();
+                    cartModal.classList.add('hidden');
+                } else {
+                    showMessageBox('La consulta está vacía. ¡Añade servicios para agendar!');
+                }
+            });
+            
+            // --- Gemini API Integrations ---
+
+            const apiKey = ""; 
+            const modelUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${apiKey}`;
+
+            // Function to summarize text using Gemini API
+            async function summarizeText(text) {
+                const systemPrompt = "Eres un asistente útil que resume textos. Genera un resumen conciso y claro de la siguiente entrada de usuario.";
+                const userQuery = `Por favor, resume este texto: "${text}"`;
+
+                const payload = {
+                    contents: [{ parts: [{ text: userQuery }] }],
+                    systemInstruction: { parts: [{ text: systemPrompt }] },
+                };
+
+                try {
+                    summaryResult.classList.add('hidden');
+                    loadingSpinner.classList.remove('hidden');
+
+                    const response = await fetch(modelUrl, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(payload)
+                    });
+                    const result = await response.json();
+                    
+                    const summarizedText = result.candidates?.[0]?.content?.parts?.[0]?.text || "No se pudo generar el resumen. Inténtalo de nuevo.";
+                    summaryText.textContent = summarizedText;
+                    summaryResult.classList.remove('hidden');
+                } catch (error) {
+                    console.error('Error al llamar a la API de Gemini para resumir:', error);
+                    summaryText.textContent = "Hubo un error al generar el resumen. Por favor, inténtalo de nuevo más tarde.";
+                    summaryResult.classList.remove('hidden');
+                } finally {
+                    loadingSpinner.classList.add('hidden');
+                }
+            }
+
+            // Function to generate content ideas using Gemini API
+            async function generateContent(topic) {
+                const systemPrompt = `Eres un experto en temas médico-jurídicos en Venezuela. Genera un resumen o puntos clave para un artículo o post de blog sobre el siguiente tema, utilizando un tono informativo y profesional.`;
+                const userQuery = `Genera un resumen o puntos clave para un artículo sobre "${topic}" enfocado en la realidad de Venezuela.`;
+
+                const payload = {
+                    contents: [{ parts: [{ text: userQuery }] }],
+                    tools: [{ "google_search": {} }],
+                    systemInstruction: { parts: [{ text: systemPrompt }] },
+                };
+
+                try {
+                    aiLoadingSpinner.classList.remove('hidden');
+                    contentResult.classList.add('hidden');
+
+                    const response = await fetch(modelUrl, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(payload)
+                    });
+                    const result = await response.json();
+                    
+                    const generatedContent = result.candidates?.[0]?.content?.parts?.[0]?.text || "No se pudo generar el contenido. Inténtalo de nuevo.";
+                    generatedText.textContent = generatedContent;
+                    contentResult.classList.remove('hidden');
+                } catch (error) {
+                    console.error('Error al llamar a la API de Gemini para generar contenido:', error);
+                    generatedText.textContent = "Hubo un error al generar el contenido. Por favor, inténtalo de nuevo más tarde.";
+                    contentResult.classList.remove('hidden');
+                } finally {
+                    aiLoadingSpinner.classList.add('hidden');
+                }
+            }
+
+            // Event listener for the summarize button
+            summarizeBtn.addEventListener('click', () => {
+                const message = messageTextarea.value.trim();
+                if (message) {
+                    summarizeText(message);
+                } else {
+                    showMessageBox('Por favor, escribe un mensaje para resumir.');
+                }
+            });
+
+            // Event listener for the content generator button
+            generateContentBtn.addEventListener('click', () => {
+                const topic = topicInput.value.trim();
+                if (topic) {
+                    generateContent(topic);
+                } else {
+                    showMessageBox('Por favor, escribe un tema para generar contenido.');
+                }
+            });
+            
+            // Custom Message Box
+            function showMessageBox(message) {
+              const modal = document.createElement('div');
+              modal.className = 'fixed inset-0 bg-gray-900 bg-opacity-75 z-[9999] flex justify-center items-center';
+              modal.innerHTML = `
+                <div class="bg-white rounded-xl shadow-2xl p-6 w-11/12 md:w-1/3 text-center">
+                  <p class="text-xl font-semibold text-gray-800 mb-4">${message}</p>
+                  <button class="bg-venezuelan-primary text-white font-bold py-2 px-6 rounded-full hover:bg-opacity-90 transition-opacity duration-300" onclick="this.parentElement.parentElement.remove()">Aceptar</button>
+                </div>
+              `;
+              document.body.appendChild(modal);
+            }
+
+            // Override window.alert for a custom message box
+            window.alert = function(message) {
+              showMessageBox(message);
+            };
+
+            // Initial render
+            renderProducts();
+            updateCart();
+        });
+    </script>
+
+</body>
+</html>
