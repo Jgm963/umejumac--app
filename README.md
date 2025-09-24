@@ -89,8 +89,7 @@ index.html
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Tarjeta de foto de ejemplo 1 -->
                 <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105">
-                    <img src="https://placehold.co/600x400/003666/FFFFFF?text=Equipo+1" alt="Foto de equipo" class="w-full h-auto object-cover rounded-t-xl">
-                    <div class="p-4">
+                    <img src="https://github.com/Jgm963/umejumac--app/blob/main/IMG_20250421_163443.jpg?raw=true">
                         <h4 class="font-bold text-lg">Equipo 1</h4>
                     </div>
                 </div>
