@@ -206,8 +206,7 @@
                     </div>
                     
                     <!-- LIBRO 8: Placeholder genérico -->
-                    <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105">
-                        <div class="w-full h-64 placeholder-img">Libro 8</div>
+                    <img src="bb.png" alt="Llave en Venta" class="w-full h-64 object-cover">
                         <div class="p-3 text-center">
                             <h4 class="font-bold text-md text-blue-800 truncate">Libro 8: <span class="text-red-500">Espacio para Nuevo Artículo</span></h4>
                             <p class="text-xs text-gray-600 mt-1">
