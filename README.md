@@ -172,11 +172,11 @@ index.html<!DOCTYPE html>
             <section id="galeria" class="space-y-8">
                 <h3 class="text-center text-4xl font-extrabold text-blue-900">Fotografía</h3>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- Tarjeta de foto de ejemplo 1 -->
+                    <https://github.com/Jgm963/umejumac--app/blob/main/IMG_20250421_163443.jpg>
                     <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105">
                         <img src="https://raw.githubusercontent.com/jgm963/umejumac-app/main/img_20230421_163443.jpg?raw=true" alt="Equipo 1" class="w-full h-48 object-cover">
                         <div class="p-4">
-                            <h4 class="font-bold text-lg">Foto 1</h4>
+                            <h4 class="font-bold >
                         </div>
                     </div>
                     <!-- Tarjeta de foto de ejemplo 2 -->
