@@ -70,10 +70,10 @@ index.html<!DOCTYPE html>
             <!-- Hero Section -->
             <section class="text-center py-20 bg-white rounded-xl shadow-lg mb-12 fade-in">
                 <h2 class="text-4xl md:text-5xl font-extrabold text-venezuelan-primary mb-4">
-                    Asesoría Integral en Salud y Derecho
+                    Asesoría Integral en Salud 
                 </h2>
                 <p class="text-lg text-gray-700 max-w-2xl mx-auto">
-                    En UMEJUMAC, somos expertos en la intersección de la medicina y la abogacía. Ofrecemos soluciones profesionales para salud colectiva, proyectos sanitarios, y transacciones de bienes y servicios.
+                    En UMEJUMAC, ofrecemos soluciones profesionales y proyectos para salud colectiva.
                 </p>
             </section>
 
@@ -84,13 +84,13 @@ index.html<!DOCTYPE html>
                     <div class="bg-white rounded-xl shadow-lg p-6 transform transition-transform duration-300 hover:scale-105">
                         <h3 class="text-2xl font-bold text-venezuelan-primary mb-2">Salud Colectiva</h3>
                         <p class="text-gray-600">
-                            Ofrecemos asesoría y consultoría en salud colectiva y pública, planificación y gestión de proyectos sanitarios, y capacitación en políticas de salud.
+                            Ofrecemos asesoría y consultoría en salud colectiva, planificación y gestión de proyectos sanitarios, y capacitación en políticas de salud.
                         </p>
                     </div>
                     <div class="bg-white rounded-xl shadow-lg p-6 transform transition-transform duration-300 hover:scale-105">
                         <h3 class="text-2xl font-bold text-venezuelan-primary mb-2">Bienes y Servicios</h3>
                         <p class="text-gray-600">
-                            Brindamos asesoría en la compra y venta de bienes y servicios, garantizando que cada transacción se realice de manera segura y legal.
+                            
                         </p>
                     </div>
                 </div>
@@ -114,7 +114,7 @@ index.html<!DOCTYPE html>
                         <div class="mb-6">
                             <h4 class="text-xl font-bold mb-2 text-venezuelan-primary">Perfil Profesional</h4>
                             <p class="text-gray-700 text-justify">
-                                Profesional con más de tres décadas de experiencia en la gestión y administración de la salud colectiva. Mi trayectoria como médico, especialista en Salud Pública y doctor en Gestión me ha permitido liderar la planificación estratégica y la dirección de sistemas de salud complejos, incluso en un contexto de crisis socioeconómica y sanitaria, con una notable actuación en la pandemia de COVID-19. Mi formación en derecho es una ventaja competitiva que me facilita la comprensión de marcos normativos y la gestión integral. Mi objetivo es aplicar mi conocimiento como asesor internacional en salud pública y proyectos comunitarios.
+                                Profesional con más de tres décadas de experiencia en la gestión y administración de la salud colectiva. Mi trayectoria como médico, especialista en Salud Pública y doctor en Gestión me ha permitido liderar la planificación estratégica y la dirección de sistemas de salud complejos, incluso en un contexto de crisis socioeconómica y sanitaria, como en la pandemia de COVID-19. Mi formación en derecho es una ventaja competitiva que me facilita la comprensión de marcos normativos y la gestión integral. Mi objetivo es aplicar mi conocimiento como asesor  en salud pública y proyectos comunitarios.
                             </p>
                         </div>
                         
