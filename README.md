@@ -109,7 +109,7 @@
         <div class="container">
             <img src="ruta/al/logo.png" alt="Logo UMEJUMAC" style="width: 50px; height: 50px; margin-bottom: 10px;">
             <h1>UMEJUMAC</h1>
-            <p>Soluciones Integrales.</p>
+            <p>Soluciones Integrales en salud colectiva.</p>
         </div>
     </header>
 
@@ -129,7 +129,7 @@
         
         <section class="seccion-intro" style="text-align: center; padding: 40px 0;">
             <h2>Bienvenido a  UMEJUMAC</h2>
-            <p style="font-size: 1.1em; color: #555;">Somos tu aliado en la convergencia de la salud, la logística y la transformación digital. Descubre nuestros tres pilares:</p>
+            <p style="font-size: 1.1em; color: #555;">Somos tu aliado en la gestion estrategica del sector salud:</p>
         </section>
 
         <div class="seccion-principal">
@@ -156,12 +156,12 @@
 
             <section id="ventas" class="card">
                 <h2>3. Ventas (bienes de la firma personal UMEJUMAC)</h2>
-                <p>Tu socio en transformación personal.</p>
+                <p>Tu socio en transformación estrategica personal.</p>
                 <ul>
                     <li>Desarrollo de estrategias Personalizado.</li>
                     <li> Gestión Estrategica.</li>
                 </ul>
-                <a href="#">Ver Soluciones →</a>
+                <a href="#">Soluciones estrategicas→</a>
             </section>
 
         </div>
