@@ -109,7 +109,7 @@
         <div class="container">
             <img src="ruta/al/logo.png" alt="Logo UMEJUMAC" style="width: 50px; height: 50px; margin-bottom: 10px;">
             <h1>UMEJUMAC</h1>
-            <p>Soluciones Integrales para tu Negocio.</p>
+            <p>Soluciones Integrales.</p>
         </div>
     </header>
 
@@ -128,7 +128,7 @@
     <main class="container">
         
         <section class="seccion-intro" style="text-align: center; padding: 40px 0;">
-            <h2>Bienvenido a la Plataforma UMEJUMAC</h2>
+            <h2>Bienvenido a  UMEJUMAC</h2>
             <p style="font-size: 1.1em; color: #555;">Somos tu aliado en la convergencia de la salud, la logística y la transformación digital. Descubre nuestros tres pilares:</p>
         </section>
 
@@ -136,7 +136,7 @@
 
             <section id="asesoria" class="card">
                 <h2>1. Asesoría en Salud Colectiva</h2>
-                <p>Ofrecemos consultoría especializada para optimizar la gestión de riesgos de salud. Desde el análisis epidemiológico hasta el diseño de políticas de prevención y bienestar.</p>
+                <p>Ofrecemos consultoría especializada para optimizar la gestión de riesgos  desde el análisis epidemiológico hasta el diseño de políticas de prevención y bienestar.</p>
                 <ul>
                     <li>Análisis Estratégico.</li>
                     <li>Planes de Prevención.</li>
@@ -146,20 +146,20 @@
 
             <section id="bienesyservicios" class="card">
                 <h2>2. Bienes y Servicios</h2>
-                <p>Suministro eficiente y confiable de equipos, insumos y materiales esenciales. Garantizamos calidad y logística impecable para el sector público y privado.</p>
+                <p> Garantizamos calidad y logística impecable por un equipo de trabajo de alta efectividadpara el sector público y privado.</p>
                 <ul>
-                    <li>Suministro de Materiales Críticos.</li>
-                    <li>Logística y Distribución.</li>
+                    <li>Suministro de informacion para logica estrategica.</li>
+                    <li>Logística y estrategia.</li>
                 </ul>
                 <a href="#">Ver Catálogo →</a>
             </section>
 
             <section id="ventas" class="card">
-                <h2>3. Ventas (Soluciones Tecnológicas)</h2>
-                <p>Tu socio en transformación digital. Desarrollamos y vendemos soluciones web a medida, software de gestión (ERP/CRM) y plataformas de comercio electrónico.</p>
+                <h2>3. Ventas (bienes de la firma personal UMEJUMAC)</h2>
+                <p>Tu socio en transformación personal.</p>
                 <ul>
-                    <li>Desarrollo Web Personalizado.</li>
-                    <li>Software de Gestión Empresarial.</li>
+                    <li>Desarrollo de estrategias Personalizado.</li>
+                    <li> Gestión Estrategica.</li>
                 </ul>
                 <a href="#">Ver Soluciones →</a>
             </section>
@@ -170,7 +170,7 @@
 
     <footer>
         <div class="container">
-            <p>Contáctanos: info@umejumac.com | Tel: +1 (XXX) XXX-XXXX</p>
+            <p>Contáctanos: jgm963@gmail.com | Tel: +58 426 570 83 69</p>
             <p style="font-size: 0.8em; margin-top: 10px;">&copy; 2025 UMEJUMAC. Todos los derechos reservados.</p>
         </div>
     </footer>
