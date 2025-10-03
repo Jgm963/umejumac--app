@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UMEJUMAC | Soluciones Integrales y Digitales</title>
+    <title>UMEJUMAC | Soluciones Integrales</title>
     
     <style>
         /* --- VARIABLES DE DISEÑO --- */
@@ -230,8 +230,8 @@
     <main class="container">
         
         <section class="seccion-intro" style="text-align: center; padding: 40px 0;">
-            <h2>Bienvenido a la Plataforma UMEJUMAC</h2>
-            <p style="font-size: 1.1em; color: #555;">Somos tu aliado en la convergencia de la salud, la logística y la transformación digital. Descubre nuestros tres pilares:</p>
+            <h2>BIENVENIDO a UMEJUMAC</h2>
+            <p style="font-size: 1.1em; color: #555;">Somos tu aliado en el abordaje a inconvenientes en la salud colectiva y personal</p>
             
             <div class="button-group">
                 <a href="#asesoria" class="action-button">Nuestros Servicios</a>
@@ -243,7 +243,7 @@
 
             <section id="asesoria" class="card">
                 <h2>1. Asesoría en Salud Colectiva</h2>
-                <p>Ofrecemos consultoría especializada para optimizar la gestión de riesgos de salud. Desde el análisis epidemiológico hasta el diseño de políticas de prevención y bienestar.</p>
+                <p>Ofrecemos consultoría especializada para optimizar la gestión de riesgos de salud, desde el análisis epidemiológico hasta el diseño de políticas de prevención y bienestar.</p>
                 <ul>
                     <li>Análisis Estratégico.</li>
                     <li>Planes de Prevención.</li>
@@ -253,20 +253,20 @@
 
             <section id="bienesyservicios" class="card">
                 <h2>2. Bienes y Servicios</h2>
-                <p>Suministro eficiente y confiable de equipos, insumos y materiales esenciales. Garantizamos calidad y logística impecable para el sector público y privado.</p>
+                <p>Garantizamos calidad y logística de un Equipo de Trabajo de Alta Efectividadimpecable. </p>
                 <ul>
-                    <li>Suministro de Materiales Críticos.</li>
-                    <li>Logística y Distribución.</li>
+                    <li>Suministro de material de capacitacion en planificacion estrategica</li>
+                    <li>Logística en abordaje estrategico.</li>
                 </ul>
                 <a href="#">Ver Catálogo →</a>
             </section>
 
             <section id="ventas" class="card">
-                <h2>3. Ventas (Soluciones Tecnológicas)</h2>
-                <p>Tu socio en transformación digital. Desarrollamos y vendemos soluciones web a medida, software de gestión (ERP/CRM) y plataformas de comercio electrónico.</p>
+                <h2>3. Ventas de bienes de la firma personal UMEJUMAC</h2>
+                <p>Tu socio en consenso para precios justos</p>
                 <ul>
-                    <li>Desarrollo Web Personalizado.</li>
-                    <li>Software de Gestión Empresarial.</li>
+                    <li>Desarrollo Personalizado.</li>
+                    <li>Gestión Estrategica.</li>
                 </ul>
                 <a href="#">Ver Soluciones →</a>
             </section>
