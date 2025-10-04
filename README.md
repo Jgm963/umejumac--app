@@ -323,7 +323,7 @@
         </div>
         <div>
             <h1>UMEJUMAC</h1>
-            <p>Soluciones Integrales y Digitales.</p>
+            <p>Soluciones Integrales bajo enfoque de la planificacion estrategica.</p>
         </div>
     </header>
 
